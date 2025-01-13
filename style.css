@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/mountain_a1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    position: relative; /* Added for positioning the .title and .button */
+}
+
+ul {
+    position: absolute; /* Positioned relative to the header */
+    top: 15px;
+    right: 60px;
+    font-size: 1.3vw; /* Relative font size */
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2px 1vw; /* Relative padding */
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.logo {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+}
+
+.logo img {
+    width: 8vw; /* Relative width */
+    height: auto;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 4vw; /* Relative font size */
+}
+
+.button {
+    position: absolute;
+    top: 55%; /* Adjusted for better positioning */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 0vw 2vw; /* Relative padding */
+    color: #fff;
+    transition: 0.5s ease;
+    font-size: 1.5vw; /* Relative font size */
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}

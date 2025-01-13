@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: century;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/mountain_a1.jpg);
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    position: relative;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: auto; /* Set height to auto to increase with content */
+}
+
+.logo {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+}
+
+.logo img {
+    width: 8vw; /* Relative width */
+    height: auto;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 5%; /* Adjust margin-right */
+    min-height: 100px;
+    font-size: 17px; /* Use relative font size */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px; /* Adjust padding */
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #131212be;
+}
+
+.nav-area {
+    float: left;
+    background-color: #80808042;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+
+.nav-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-area ul li {
+    position: relative;
+    background-color: #424141ad;
+    padding: 5px 5px; /* Adjust padding */
+}
+
+.nav-area ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 5px; /* Adjust padding */
+    display: block;
+}
+
+.nav-area ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    min-width: 160px;
+}
+
+.nav-area ul li:hover > ul {
+    display: block;
+}
+
+.nav-area ul ul li:hover > a {
+    background: rgba(39, 39, 39, 0.664);
+}
+
+.nav-area ul li:hover > a {
+    background: rgba(19, 18, 18, 0.596);
+}
+
+.nav-area ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    min-width: 160px;
+}
+
+.nav-area ul ul ul li {
+    position: relative;
+    padding: 0;
+}
+
+.nav-area ul ul ul li:hover > a {
+    background: rgba(19, 18, 18, 0.596);
+}
+
+.nav-area:after {
+    content: '';
+    clear: both;
+    display: block;
+}
